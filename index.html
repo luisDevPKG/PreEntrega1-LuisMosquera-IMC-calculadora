@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor-principal">
+            <h1>Calcular Indice de masa corporal (IMC)</h1>
+            <div class="contenedor">
+                <img src="/assets/imc.png" alt="imc imagen ilustrativa">
+                <div class="semi-form">
+                    <p>Por favor ingresa tu peso en kilogramos (kg)</p>
+                    <input class="input-form" type="text" id="peso" placeholder="Ingresa tu peso" oninput="soloNumeros(this)">
+                    <P>Por favor ingresa tu estatura en metros (m)</P>
+                    <input class="input-form" type="text" id="estatura" placeholder="Ingresa tu estatura" oninput="soloNumeros(this)">
+                    <button class="btn1" onclick="calcularIMC()">Calcular IMC</button>
+                    <br>
+                    <p>Si deseas calcular el promedio de IMC de las consultas realizadas haz click en calcular promedio</p>
+                    <button class="btn2" onclick="calcularPromedio()">Calcular Promedio IMC</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
