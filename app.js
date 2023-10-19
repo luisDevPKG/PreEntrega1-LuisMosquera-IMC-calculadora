@@ -1,3 +1,7 @@
+/*
+Autor: Luis Fernando Mosquera Imbachi - 18/10/2023
+Primera pre-entrega del curso de javascript
+*/
 
 // funcion para que los inputs solo reciban numeros
 function soloNumeros(input){
@@ -38,7 +42,7 @@ function calcularIMC() {
             // redondeo el valor de resultado a 2 decimales
             resultado = Number(resultado.toFixed(2));
 
-            // comienzo a llenar el arreglo de resultados
+            // comienzo a llenar el arreglo de resultados (creado al inicio)
             resultados.push(resultado);
 
             if (resultado > 30.0){
@@ -50,7 +54,6 @@ function calcularIMC() {
             } else {
                 alert(`El paciente presenta un IMC de ${resultado}, por lo que presenta DESNUTRICION`);
             }
-
         } else {
             alert("Por favor ingresa informacion correcta, la estatura no puede ser cero (0)")
         }
